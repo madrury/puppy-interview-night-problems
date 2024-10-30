@@ -18,7 +18,7 @@ number, which indicates a new mode of processing for the following odd numbers,
 and so on until you reach the end of the list.
 
 Here's a diagram of a list, where the even numbers are indicated along with the
-following odd numbers that are associated:
+following associated odd numbers:
 
     [2, 1, 1, 1, 4, 1, 3, 5, 2, 5, 1, 5, 1]
      |--------|  |--------|  |-----------|
@@ -28,7 +28,7 @@ As of now, there are two instructions requested from the client:
   - The `2` instruction indicates that the following odd numbers should be
   *summed*, the result of the instruction is the sum of the associated odds.
   - The `4` instruction indicates that the following odd numbers should be
-  *muliplied*, the result of the instruction is the product of the associated
+  *multiplied*, the result of the instruction is the product of the associated
   odds.
 
 Helpfully, your clients have supplied some simple examples:
