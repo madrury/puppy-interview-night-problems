@@ -12,10 +12,10 @@ The SVM processes the list of numbers from left to right, and you've been told
 that the leftmost number in the list is always *even*. The idea is that the even
 numbers in the list are *instructions* and the odd numbers in the list are
 *data*, so evens instruct the SVM on what to do with the odd numbers. When you
-*encounter an even number, all the following odd numbers (from left to right)
-*are processed acording to that even number, up until you encounter another even
-*number, which indicates a new mode of processing for the following odd numbers,
-*and so on until you reach the end of the list.
+encounter an even number, all the following odd numbers (from left to right)
+are processed acording to that even number, up until you encounter another even
+number, which indicates a new mode of processing for the following odd numbers,
+and so on until you reach the end of the list.
 
 Here's a diagram of a list, where the even numbers are indicated along with the
 following odd numbers that are associated:
