@@ -1,7 +1,7 @@
 # The Stupid Virtual Machine
 
 PuPPy consultancy finally has a client! They have instructed us to implement an
-SVM (which, upon insiting, we are told means Stupid Vitual Machine). The SVM's
+SVM (which, upon insisting, we are told means Stupid Vitual Machine). The SVM's
 job is to process lists of numbers and produce a final number, the instructions
 for this processing strike you as bizzare, but you're getting paid, so you may
 as well try to do it correctly.
