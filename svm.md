@@ -20,7 +20,7 @@ numbers in the list are *instructions* and the odd numbers in the list are
 Here's a diagram of a list, where the even numbers are indicated along with the
 following odd numbers that are associated:
 
-    [2, 1, 1, 1, 4, 1, 3, 5, 2, 0, 1, 0, 1]
+    [2, 1, 1, 1, 4, 1, 3, 5, 2, 5, 1, 5, 1]
      |--------|  |--------|  |-----------|
 
 As of now, there are two instructions requested from the client:
@@ -35,18 +35,18 @@ Helpfully, your clients have supplied some simple examples:
 
     [2, 1, 1, 1] -> 1 + 1 + 1 = 3
     [4, 1, 3, 5] -> 1 * 3 * 5 = 15
-    [2, 0, 1, 0, 1] -> 0 + 1 + 0 + 1 = 2
+    [2, 5, 1, 5, 1] -> 5 + 1 + 5 + 1 = 12
 
 When put alltogether in the same list, we'd get back three numbers:
 
-    [2, 1, 1, 1, 4, 1, 3, 5, 2, 0, 1, 0, 1]
-    -> 3, 15, 2
+    [2, 1, 1, 1, 4, 1, 3, 5, 2, 5, 1, 5, 1]
+    -> 3, 15, 12
 
 The final client direction is that these final numbers should be *summed* to get
 the ultimate result:
 
-    [2, 1, 1, 1, 4, 1, 3, 5, 2, 0, 1, 0, 1]
-    -> 3 + 15 + 2 = 20
+    [2, 1, 1, 1, 4, 1, 3, 5, 2, 5, 1, 5, 1]
+    -> 3 + 15 + 12 = 30
 
 Your job, programmer, is to implement the SVM and deliver it to the client. You
 should deliver your work as a python function:
@@ -69,12 +69,12 @@ An example will hopefully clarify what they want here:
 
     [6, 1, 1, 1] -> 1 - 1 + 1 = 1
     [6, 1, 3, 5] -> 1 - 3 + 5 = 3
-    [6, 0, 1, 0, 1] -> 0 - 1 + 0 - 1 = -2
+    [6, 5, 1, 5, 1] -> 5 - 1 + 5 - 1 = 8
 
 And an example involving multiple instructions:
 
-    [2, 1, 1, 1, 4, 1, 3, 5, 6, 0, 1, 0, 1]
-    -> 3 + 15 - 2 = 16
+    [2, 1, 1, 1, 4, 1, 3, 5, 6, 5, 1, 5, 1]
+    -> 3 + 15 + 8 = 26
 
 Add the alternating sum instruction to your SVM implementation. Reflect on how
 difficult this was and how to make it easier to add new instructions in the
