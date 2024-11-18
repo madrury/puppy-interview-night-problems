@@ -30,7 +30,7 @@ to_list_of_tuples(ts: Tuple[List[int], List[int]]) -> List[Tuple[int, int]])
     ...
 ```
 
-Examples are the reverese of the first set:
+Examples are the reverse of the first set:
 
 ```python
 to_list_of_tuples([1, 2, 3], [1, 2, 3])
@@ -44,7 +44,7 @@ to_list_of_tuples([], [])
 ```
 
 ### Filtering
-Modify your `to_list_of_tuples` function to apply a filter: only include a tuple the the final list when the sum of its entries is divisible by 2:
+Modify your `to_list_of_tuples` function to apply a filter: only include a tuple the final list when the sum of its entries is divisible by 2:
 
 ```python
 to_filtered_list_of_tuples([1, 2, 3], [1, 2, 3])
