@@ -17,7 +17,7 @@ to_tuple_of_lists([(1, 1), (2, 2), (3, 3)])
 to_tuple_of_lists([(1, 1), (1, 2), (1, 3), (1, 4)])
 ([1, 1, 1, 1], [1, 2, 3, 4])
 to_tuple_of_lists([(1, 2), (3, 4), (5, 6)])
-([1, 3, 5], [2, 4, 5])
+([1, 3, 5], [2, 4, 6])
 to_tuple_of_lists([])
 ([], [])
 ```
@@ -26,7 +26,7 @@ to_tuple_of_lists([])
 Write the inverse function: convert a `Tuple[List[int], List[int]]` into a `List[Tuple[int, int]]`, where, in the first datatype, the lists are constrained to have the same length.
 
 ```python
-to_list_of_tuples(ts: Tuple[List[int], List[int]]) -> List[Tuple[int, int]])
+to_list_of_tuples(ts: Tuple[List[int], List[int]]) -> List[Tuple[int, int]]:
     ...
 ```
 
